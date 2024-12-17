@@ -646,6 +646,10 @@ video {
   bottom: 0px;
 }
 
+.bottom-28{
+  bottom: 7rem;
+}
+
 .bottom-4{
   bottom: 1rem;
 }
@@ -809,8 +813,8 @@ video {
   height: 100%;
 }
 
-.min-h-\[80vh\]{
-  min-height: 80vh;
+.min-h-\[50vh\]{
+  min-height: 50vh;
 }
 
 .w-12{
@@ -1373,13 +1377,6 @@ section{
   padding-bottom: 6rem;
 }
 
-@media (min-width: 540px){
-  section{
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-}
-
 .btn{
   border-radius: 0.375rem;
   border-width: 1px;
@@ -1664,12 +1661,24 @@ h6{
     top: -4rem;
   }
 
-  .md\:mb-20{
-    margin-bottom: 5rem;
-  }
-
   .md\:mb-28{
     margin-bottom: 7rem;
+  }
+
+  .md\:mb-8{
+    margin-bottom: 2rem;
+  }
+
+  .md\:mt-10{
+    margin-top: 2.5rem;
+  }
+
+  .md\:mt-6{
+    margin-top: 1.5rem;
+  }
+
+  .md\:mt-8{
+    margin-top: 2rem;
   }
 
   .md\:w-52{
