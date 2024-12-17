@@ -34,14 +34,10 @@ module.exports = {
                 "50%": { transform: "scale(1.4)" },
                 "100%": { transform: "scale(1)" },
             },
-            ping: {
-                "75%, 100%": { transform: "scale(2)", opacity: 0 },
-            },
         },
         animation: {
             movingY: "move 3s ease-in-out infinite",
             scaling: "scaleup 10s linear infinite",
-            pinging: "ping 3s cubic-bezier(0, 0.2, 1, 2) infinite",
         },
     },
     plugins: [],

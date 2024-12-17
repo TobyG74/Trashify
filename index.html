@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link href="./output.css" rel="stylesheet" />
         <!-- Remix Icon -->
         <link
             rel="stylesheet"
@@ -15,6 +14,7 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
+        <link href="./output.css" rel="stylesheet" />
         <title>Trashify</title>
         <link
             rel="shortcut icon"
@@ -51,11 +51,14 @@
                         <li>
                             <a href="#blog" class="nav-link">Blog</a>
                         </li>
+                        <li>
+                            <a href="#ulasan" class="nav-link">Ulasan</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="text-xl sm:text-3xl cursor-pointer z-50 lg:hidden">
-                    <i class="ri-menu-4-line" id="nav-toggle"></i>
+                    <i class="ri-menu-4-line" id="hamburger"></i>
                 </div>
             </nav>
         </header>
@@ -76,12 +79,13 @@
 
                     <div class="flex flex-col items-center gap-5 lg:flex-row">
                         <!-- Home Content -->
-                        <div class="beranda w-full space-y-5 lg:w-1/2">
+                        <div class="beranda_content w-full space-y-5 lg:w-1/2">
                             <h1>
                                 <span class="text-primary">Ubah</span> Sampah
                                 Menjadi <br />
                                 <span id="typed" class="text-primary"></span>!
                             </h1>
+
                             <p class="text-slate-300 font-poppins">
                                 Dengan bank sampah, Anda dapat mengelola sampah
                                 dengan bijak. <br />
@@ -154,20 +158,35 @@
             <!-- Home -->
 
             <!-- Waves -->
-            <span class="relative -bottom-0 scale-x-105 -z-10">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <span
+                class="relative -bottom-1 scale-x-105 overflow-hidden leading-[0]"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1000 100"
+                    fill="#FFFFFF"
+                    class="w-full h-full transform scale-x-[-1] scale-y-[-1]"
+                >
                     <path
-                        fill="#fff"
-                        fill-opacity="1"
-                        d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,112C672,75,768,53,864,58.7C960,64,1056,96,1152,117.3C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                        d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"
                     ></path>
                 </svg>
             </span>
             <!-- Waves -->
 
             <!-- Card -->
-            <div class="bg-white text-blue-900 py-10">
-                <h1 class="manfaat text-center pb-14">Manfaat Bank Sampah</h1>
+            <div class="bg-white text-blue-900 pt-10 pb-16">
+                <div
+                    class="manfaat_content flex flex-col items-center text-center gap-5 mb-14"
+                >
+                    <h2 class="font-poppins text-blue-500">
+                        Manfaat Bank Sampah
+                    </h2>
+                    <p class="max-w-2xl">
+                        Bank sampah memberikan banyak manfaat bagi lingkungan
+                        dan masyarakat sekitar.
+                    </p>
+                </div>
                 <div
                     class="container w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
                 >
@@ -253,12 +272,17 @@
             </div>
 
             <!-- Waves -->
-            <span class="relative scale-x-105 -top-1">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <span
+                class="relative -top-1 scale-x-105 overflow-hidden leading-[0]"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1000 100"
+                    fill="#FFFFFF"
+                    class="w-full h-full"
+                >
                     <path
-                        fill="#fff"
-                        fill-opacity="1"
-                        d="M0,96L48,122.7C96,149,192,203,288,202.7C384,203,480,149,576,112C672,75,768,53,864,58.7C960,64,1056,96,1152,117.3C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+                        d="M1000 0H0v52C62.5 28 125 4 250 4c250 0 250 96 500 96 125 0 187.5-24 250-48V0Z"
                     ></path>
                 </svg>
             </span>
@@ -276,11 +300,14 @@
                     />
                 </div>
 
-                <h2
-                    class="tentang_kami font-poppins text-primary text-center mb-10 md:mb-20"
+                <div
+                    class="tentang_kami_content flex flex-col items-center text-center gap-5 mb-10 md:mb-20"
                 >
-                    Tentang Kami
-                </h2>
+                    <h2 class="font-poppins text-primary">Tentang Kami</h2>
+                    <p class="max-w-2xl">
+                        Hidup sehat dimulai dari lingkungan yang bersih.
+                    </p>
+                </div>
 
                 <div class="container space-y-10 xl:space-y-0">
                     <!-- Step 1 -->
@@ -452,17 +479,23 @@
             <!-- About -->
 
             <!-- Category -->
-            <section id="kategori" class="bg-blue-900">
-                <h2 class="kategori font-poppins text-white text-center mb-40">
-                    Kategori Sampah
-                </h2>
+            <section id="kategori" class="bg-blue-900 relative">
+                <div
+                    class="kategori_title flex flex-col items-center text-center gap-5 mb-40"
+                >
+                    <h2 class="font-poppins text-white">Kategori Sampah</h2>
+                    <p class="max-w-2xl">
+                        Sampah dapat dibedakan menjadi beberapa kategori
+                        berdasarkan jenisnya.
+                    </p>
+                </div>
 
                 <div
                     class="container mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 sm:gap-12 lg:gap-8 place-items-center"
                 >
                     <!-- Organic -->
                     <div
-                        class="kategori_card bg-yellow-700 p-10 pt-24 rounded-md relative w-80 h-[330px] text-center"
+                        class="kategori_card bg-green-700 p-10 pt-24 rounded-md relative w-80 h-[330px] text-center"
                     >
                         <img
                             src="./assets/img/sampah-organic.png"
@@ -518,7 +551,7 @@
             <!-- Category -->
 
             <!-- Blog -->
-            <section id="blog" class="relative bg-white overflow-hidden">
+            <section id="blog" class="relative overflow-hidden">
                 <div class="absolute -top-8 -right-10 opacity-50">
                     <img
                         src="./assets/img/daun.png"
@@ -526,100 +559,341 @@
                         class="blog_image_daun w-40 md:w-52 xl:w-64 rotate-120 -scale-x-100"
                     />
                 </div>
-                <h2 class="blog font-poppins text-primary text-center">Blog</h2>
                 <div
-                    class="container flex flex-wrap gap-6 py-16 justify-center"
+                    class="blog_title flex flex-col items-center text-center gap-5"
                 >
-                    <article
-                        class="blog_card border border-green-800 rounded-lg overflow-hidden w-[300px] hover:shadow-2xl flex flex-col"
-                    >
-                        <img
-                            class="h-[200px]"
-                            src="./assets/img/blog-1.jpg"
-                            alt="gambar_blog"
-                        />
-                        <div class="p-4 flex flex-col flex-grow">
-                            <h5 class="text-gray-800">
-                                Cara Memulai Bank Sampah di Lingkungan Anda
-                            </h5>
-                            <p class="text-gray-600 mt-2 text-sm flex-grow">
-                                Pelajari langkah-langkah mudah untuk membangun
-                                komunitas peduli lingkungan melalui bank sampah.
-                            </p>
-                            <a
-                                href="#"
-                                class="inline-block mt-auto text-green-600 font-semibold hover:underline"
-                            >
-                                Baca Selengkapnya
-                            </a>
-                        </div>
-                    </article>
+                    <h2 class="font-poppins text-primary">Blog</h2>
+                    <p class="max-w-2xl text-gray-800">
+                        Dapatkan informasi terbaru seputar bank sampah dan
+                        lingkungan hidup.
+                    </p>
+                </div>
+                <!-- Container Blog -->
+                <div
+                    id="blog-container"
+                    class="blog_card container flex flex-wrap gap-6 justify-center pt-16"
+                ></div>
 
-                    <article
-                        class="blog_card border border-green-800 rounded-lg overflow-hidden w-[300px] hover:shadow-2xl flex flex-col"
+                <!-- Pagination Buttons -->
+                <div
+                    class="blog_button flex flex-row justify-center gap-5 mt-8 z-10"
+                >
+                    <button
+                        id="prev-page"
+                        class="bg-green-600 text-white px-4 py-2 w-32 rounded disabled:opacity-50 hover:bg-green-700 hover:-translate-y-1"
+                        disabled
                     >
-                        <img
-                            class="h-[200px]"
-                            src="./assets/img/blog-2.jpg"
-                            alt="gambar_blog"
-                        />
-                        <div class="p-4 flex flex-col flex-grow">
-                            <h5 class="text-gray-800">
-                                Manfaat Daur Ulang bagi Ekonomi Keluarga
-                            </h5>
-                            <p class="text-gray-600 mt-2 text-sm flex-grow">
-                                Bagaimana memilah sampah dapat memberikan
-                                keuntungan finansial dan menciptakan lingkungan
-                                bersih.
-                            </p>
-                            <a
-                                href="#"
-                                class="inline-block mt-auto text-green-600 font-semibold hover:underline"
-                            >
-                                Baca Selengkapnya
-                            </a>
-                        </div>
-                    </article>
-
-                    <article
-                        class="blog_card border border-green-800 rounded-lg overflow-hidden w-[300px] hover:shadow-2xl flex flex-col"
+                        Prev
+                    </button>
+                    <button
+                        id="next-page"
+                        class="bg-green-600 text-white px-4 py-2 w-32 rounded disabled:opacity-50 hover:bg-green-700 hover:-translate-y-1"
                     >
-                        <img
-                            class="h-[200px]"
-                            src="./assets/img/blog-3.jpg"
-                            alt="gambar_blog"
-                        />
-                        <div class="p-4 flex flex-col flex-grow">
-                            <h5 class="text-gray-800">
-                                Tips Mengurangi Penggunaan Plastik di Rumah
-                            </h5>
-                            <p class="text-gray-600 mt-2 text-sm flex-grow">
-                                Langkah sederhana untuk mengurangi sampah
-                                plastik dan menjaga kelestarian lingkungan.
-                            </p>
-                            <a
-                                href="#"
-                                class="inline-block mt-auto text-green-600 font-semibold hover:underline"
-                            >
-                                Baca Selengkapnya
-                            </a>
-                        </div>
-                    </article>
+                        Next
+                    </button>
                 </div>
             </section>
             <!-- Blog -->
 
             <!-- Review -->
+            <section
+                id="ulasan"
+                class="relative mb-20 md:mb-28 overflow-hidden"
+            >
+                <div class="absolute -top-8 -left-12 opacity-50">
+                    <img
+                        src="./assets/img/kaleng.png"
+                        alt="kaleng"
+                        class="w-40 md:w-52 xl:w-64"
+                    />
+                </div>
+                <div
+                    class="ulasan_title flex flex-col items-center gap-8 text-center mb-10 md:mb-20"
+                >
+                    <h2 class="text-primary">Ulasan Pelanggan</h2>
+                    <p class="max-w-2xl">
+                        Apa kata mereka tentang Trashify? Simak ulasan dari
+                        pelanggan kami di bawah ini.
+                    </p>
+                </div>
 
+                <div class="ulasan_content container">
+                    <div class="swiper py-12">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div
+                                    class="flex flex-col gap-5 bg-blue-900 rounded-md p-6 max-w-md mx-auto w-full"
+                                >
+                                    <p
+                                        class="font-poppins line-clamp-6 overflow-hidden"
+                                    >
+                                        Ehh.. anu, webs-- website ini.. emm,
+                                        beneran ngebantu saya banget sih. Hmm..
+                                        dapet, dapet informasi gitu.. tentang,
+                                        eumm.. cara ngelola sampah, ya, sampah
+                                        di lingkungan. Jujur, awalnya nggak
+                                        ngerti, tapi-- tapi, eh, panduan dari
+                                        sini tuh, bikin saya jadi bisa ikut
+                                        program bank sampah.
+                                    </p>
+                                    <div class="flex items-center">
+                                        <img
+                                            src="./assets/img/review-1.jpg"
+                                            alt="review_image"
+                                            class="w-12 h-12 rounded-full"
+                                        />
+                                        <div class="ml-2">
+                                            <p class="text-primary uppercase">
+                                                Aan Android
+                                            </p>
+                                            <p>Psikiater</p>
+                                        </div>
+                                        <i
+                                            class="ri-double-quotes-r text-4xl ml-auto"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <div
+                                    class="flex flex-col gap-5 bg-blue-900 rounded-md p-6"
+                                >
+                                    <p
+                                        class="font-poppins line-clamp-6 overflow-hidden"
+                                    >
+                                        Sangat inspiratif! Dengan adanya website
+                                        ini, saya jadi bisa menggerakkan warga
+                                        di lingkungan saya untuk lebih peduli
+                                        pada pengelolaan sampah. Informasinya
+                                        lengkap, mudah dipahami, dan cocok untuk
+                                        semua kalangan usia. Terima kasih
+                                        Trashify!
+                                    </p>
+                                    <div class="flex items-center">
+                                        <img
+                                            src="./assets/img/review-2.jpg"
+                                            alt="review_image"
+                                            class="w-12 h-12 rounded-full"
+                                        />
+                                        <div class="ml-2">
+                                            <p class="text-primary uppercase">
+                                                Tretan Muslim
+                                            </p>
+                                            <p>Youtuber</p>
+                                        </div>
+                                        <i
+                                            class="ri-double-quotes-r text-4xl ml-auto"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <div
+                                    class="flex flex-col gap-5 bg-blue-900 rounded-md p-6"
+                                >
+                                    <p
+                                        class="font-poppins line-clamp-6 overflow-hidden"
+                                    >
+                                        Bro, bro, dengerin, ya! Website ini,
+                                        sadar bahwa gue bisa ngurangin sampah
+                                        sambil... apa?... sambil mendukung
+                                        gerakan peduli lingkungan, anjay! dan
+                                        tentunya website ini gak bikin mabok, eh
+                                        maksudnya mabok karena informasinya
+                                        jelas banget, gak bikin bingung, dan gak
+                                        bikin pusing. Jadi, gue kasih nilai 10
+                                        deh buat website ini!
+                                    </p>
+                                    <div class="flex items-center">
+                                        <img
+                                            src="./assets/img/review-3.jpg"
+                                            alt="review_image"
+                                            class="w-12 h-12 rounded-full"
+                                        />
+                                        <div class="ml-2">
+                                            <p class="text-primary uppercase">
+                                                Coki Pardede
+                                            </p>
+                                            <p>Lucifer</p>
+                                        </div>
+                                        <i
+                                            class="ri-double-quotes-r text-4xl ml-auto"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="swiper-slide">
+                                <div
+                                    class="flex flex-col gap-5 bg-blue-900 rounded-md p-6"
+                                >
+                                    <p
+                                        class="font-poppins line-clamp-6 overflow-hidden"
+                                    >
+                                        Web... web-eh... website ini tuh...
+                                        a-anu, solusi... apa ya, oh iya, solusi
+                                        cerdas! Ehm, bagi kita semua gitu.
+                                        Saya... saya jadi bisa... emm... apa tuh
+                                        namanya... oh! Ngurangin sampah rumah
+                                        tangga. Trus... trus, eh, apa tadi ya?
+                                        Oh iya, mendukung... dukung... gerakan
+                                        peduli lingkungan, gitu deh.
+                                    </p>
+                                    <div class="flex items-center">
+                                        <img
+                                            src="./assets/img/review-4.jpg"
+                                            alt="review_image"
+                                            class="w-12 h-12 rounded-full"
+                                        />
+                                        <div class="ml-2">
+                                            <p class="text-primary uppercase">
+                                                Sugeng Tumblr
+                                            </p>
+                                            <p>Motivator</p>
+                                        </div>
+                                        <i
+                                            class="ri-double-quotes-r text-4xl ml-auto"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
             <!-- Review -->
-
-            <!-- Footer -->
-
-            <!-- Footer -->
         </main>
+
+        <footer
+            class="bg-green-100 text-blue-950 pt-20 pb-10 md:pt-28 relative"
+        >
+            <!-- Newsletter -->
+            <div
+                class="newsletter_content container text-white absolute top-0 right-0 left-0 -translate-y-1/2"
+            >
+                <div class="bg-blue-900 px-10 pt-5 pb-10 space-y-5 rounded-md">
+                    <h3>
+                        <span class="text-primary">Berlangganan</span>
+                        ke newsletter kami
+                    </h3>
+
+                    <div class="flex flex-col md:flex-row gap-1">
+                        <input
+                            type="email"
+                            placeholder="Masukkan Alamat Email"
+                            class="w-full px-5 py-3 text-blue-900 rounded-md outline-none"
+                        />
+                        <button
+                            class="flex items-center justify-center gap-1 bg-blue-950 px-5 py-3 rounded-md hover:opacity-80 duration-300"
+                        >
+                            <span>Subcribe</span>
+                            <i class="ri-send-plane-2-fill"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Icon Sosmed -->
+            <div class="footer_icon container mt-16 mb-10">
+                <div class="border-b border-primary relative">
+                    <div
+                        class="absolute top-0 transform -translate-y-1/2 left-0 right-0 max-w-36 mx-auto"
+                    >
+                        <div class="bg-green-100 text-lg text-center space-x-2">
+                            <i
+                                class="ri-facebook-fill hover:text-primary duration-300 cursor-pointer"
+                            ></i>
+                            <i
+                                class="ri-instagram-line hover:text-primary duration-300 cursor-pointer"
+                            ></i>
+                            <i
+                                class="ri-twitter-x-fill hover:text-primary duration-300 cursor-pointer text-base"
+                            ></i>
+
+                            <i
+                                class="ri-youtube-fill hover:text-primary duration-300 cursor-pointer"
+                            ></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="footer_content container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center md:text-start"
+            >
+                <div>
+                    <div class="inline-block">
+                        <!-- <i class="ri-leaf-fill"></i> -->
+                        <img
+                            src="./assets/img/favicon.png"
+                            alt="logo"
+                            class="w-[150px]"
+                        />
+                        <h2
+                            class="text-center font-bebas text-xl text-green-700 sm:text-2xl"
+                        >
+                            Trashify
+                        </h2>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="md-5 mb-4 font-bold text-xl">Anggota Kelompok</p>
+
+                    <div class="flex flex-col gap-1">
+                        <a href="#">Azizan Ramadhan</a>
+                        <a href="#">Tobi Saputra</a>
+                        <a href="#">Muhammad Iihab Wahyudin</a>
+                        <a href="#">Muhammad Zulfahmi</a>
+                        <a href="#">Muhammad Habib Hendrawan</a>
+                        <a href="#">Meirgy Satria Nugroho</a>
+                        <a href="#">Achmad Kevin Arigi</a>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="md-5 mb-4 font-bold text-xl">Contact Us</p>
+
+                    <div class="flex flex-col gap-1">
+                        <a href="tel:+6281311850715"
+                            ><i class="ri-phone-line"></i> +62 81311850715</a
+                        >
+                        <a href="mailto:tobisaputra11@gmail.com"
+                            ><i class="ri-mail-send-line"></i>
+                            tobisaputra11@gmail.com</a
+                        >
+                        <br />
+                        <p>
+                            <i class="ri-map-pin-line"></i> Jakarta Selatan,
+                            Daerah Khusus Jakarta, Indonesia
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="copy__right container">
+                <p class="text-center mt-10 opacity-50">
+                    Copyright &copy; 2024 Tobi Saputra. All Rights Reserved.
+                </p>
+            </div>
+
+            <div
+                class="footer_image absolute bottom-0 left-0 opacity-20 pointer-events-none"
+            >
+                <img
+                    src="./assets/img/leaves.png"
+                    alt="leaves"
+                    class="w-full lg:w-1/2"
+                />
+            </div>
+        </footer>
+
+        <!-- Scroll Up -->
         <a
             href="#"
-            class="fixed right-4 bottom-4 bg-green-500 shadow-sm inline-flex items-center justify-center w-12 h-12 rounded-full text-lg z-50 hover:-translate-y-1 duration-300 animate-movingY"
+            class="fixed right-4 bottom-4 bg-primary shadow-sm inline-flex items-center justify-center w-12 h-12 rounded-full text-lg z-50 hover:-translate-y-1 duration-300 animate-movingY"
             id="scroll-up"
         >
             <i class="ri-arrow-up-line"></i>
