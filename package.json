@@ -1,14 +1,19 @@
 {
-    "name": "tailwind-plant-website",
+    "name": "trashify",
+    "description": "Trashify merupakan website bank sampah yang dibuat menggunakan TailwindCSS",
     "version": "1.0.0",
-    "main": "index.js",
     "scripts": {
         "watch": "tailwindcss -i ./input.css -o ./output.css --watch"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "description": "",
+    "keywords": [
+        "tailwindcss"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/TobyG74/tugas-akhir-pwd.git"
+    },
+    "author": "Tobz",
+    "license": "MIT",
     "devDependencies": {
         "tailwindcss": "^3.4.16"
     }

@@ -618,20 +618,12 @@ video {
   left: -3rem;
 }
 
-.-left-16{
-  left: -4rem;
-}
-
 .-right-10{
   right: -2.5rem;
 }
 
 .-right-12{
   right: -3rem;
-}
-
-.-top-0{
-  top: -0px;
 }
 
 .-top-1{
@@ -692,18 +684,6 @@ video {
 
 .top-1\/2{
   top: 50%;
-}
-
-.-bottom-0{
-  bottom: -0px;
-}
-
-.-top-16{
-  top: -4rem;
-}
-
-.-top-20{
-  top: -5rem;
 }
 
 .-z-10{
@@ -775,12 +755,11 @@ video {
   margin-top: auto;
 }
 
-.ml-4{
-  margin-left: 1rem;
-}
-
-.ml-8{
-  margin-left: 2rem;
+.line-clamp-1{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 
 .line-clamp-6{
@@ -788,27 +767,6 @@ video {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 6;
-}
-
-.line-clamp-3{
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-}
-
-.line-clamp-2{
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-
-.line-clamp-1{
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
 }
 
 .inline-block{
@@ -889,10 +847,6 @@ video {
 
 .w-\[300px\]{
   width: 300px;
-}
-
-.w-\[400px\]{
-  width: 400px;
 }
 
 .w-full{
@@ -1181,16 +1135,6 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.px-16{
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -1221,10 +1165,6 @@ video {
 
 .pt-5{
   padding-top: 1.25rem;
-}
-
-.pt-12{
-  padding-top: 3rem;
 }
 
 .text-center{
@@ -1676,10 +1616,6 @@ h6{
 }
 
 @media (min-width: 340px){
-  .sm\:-top-16{
-    top: -4rem;
-  }
-
   .sm\:-left-12{
     left: -3rem;
   }
@@ -1694,10 +1630,6 @@ h6{
 
   .sm\:w-2\/3{
     width: 66.666667%;
-  }
-
-  .sm\:w-\[300px\]{
-    width: 300px;
   }
 
   .sm\:w-\[400px\]{
@@ -1724,34 +1656,6 @@ h6{
 }
 
 @media (min-width: 540px){
-  .md\:-left-8{
-    left: -2rem;
-  }
-
-  .md\:-left-2{
-    left: -0.5rem;
-  }
-
-  .md\:-left-4{
-    left: -1rem;
-  }
-
-  .md\:-top-20{
-    top: -5rem;
-  }
-
-  .md\:-left-16{
-    left: -4rem;
-  }
-
-  .md\:-left-12{
-    left: -3rem;
-  }
-
-  .md\:-left-10{
-    left: -2.5rem;
-  }
-
   .md\:-left-14{
     left: -3.5rem;
   }
@@ -1816,12 +1720,12 @@ h6{
     position: static;
   }
 
-  .lg\:-top-12{
-    top: -3rem;
-  }
-
   .lg\:-left-16{
     left: -4rem;
+  }
+
+  .lg\:-top-12{
+    top: -3rem;
   }
 
   .lg\:-top-20{
