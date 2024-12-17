@@ -694,6 +694,10 @@ video {
   top: 50%;
 }
 
+.-bottom-0{
+  bottom: -0px;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -1133,6 +1137,16 @@ video {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.px-16{
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pb-10{
