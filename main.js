@@ -74,7 +74,7 @@ sr.reveal(
 );
 sr.reveal(`.image_sampah`, { delay: 500, scale: 0.5 });
 sr.reveal(`.manfaat_card, .kategori_card, .blog_card`, { interval: 100 });
-sr.reveal(`.tk_image_pisang, .blog_image_daun`, {
+sr.reveal(`.tk_image_pisang, .blog_image_daun, .ulasan_image_kaleng`, {
     delay: 1000,
     origin: "right",
 });
