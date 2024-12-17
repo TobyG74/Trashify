@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply overflow-x-hidden scroll-smooth;
+}
+
+body {
+    @apply bg-blue-950 text-white font-poppins tracking-wider;
+}
+
+.nav-link {
+    @apply text-lg font-bold duration-300;
+}
+
+.nav-link:hover {
+    @apply text-primary;
+}
+
+section {
+    @apply py-24 md:py-32;
+}
+
+.btn {
+    @apply border border-primary bg-primary rounded-md py-2 px-5;
+}
+
+.btn:hover {
+    @apply opacity-90;
+}
+
+.btn span {
+    @apply font-bold;
+}
+
+.btn_outline {
+    @apply bg-transparent;
+}
+
+.btn_outline:hover {
+    @apply bg-primary;
+}
+
+.sosmed {
+    @apply text-slate-300;
+}
+
+.sosmed:hover {
+    @apply text-primary cursor-pointer;
+}
+
+.decor_home {
+    @apply text-6xl;
+}
+
+.popular_card:hover img {
+    @apply -top-8;
+}
+
+h1 {
+    @apply text-3xl md:text-4xl xl:text-5xl font-bold;
+}
+
+h2 {
+    @apply text-2xl md:text-3xl xl:text-4xl font-bold;
+}
+
+h3 {
+    @apply text-xl md:text-2xl xl:text-3xl font-bold;
+}
+
+h4 {
+    @apply text-lg md:text-xl xl:text-2xl font-bold;
+}
+
+h5 {
+    @apply text-base md:text-lg xl:text-xl font-bold;
+}
+
+h6 {
+    @apply text-sm md:text-base xl:text-lg font-bold;
+}
+
+.swiper-pagination-bullet {
+    @apply bg-green-500 w-3 h-3;
+}
