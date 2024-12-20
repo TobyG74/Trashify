@@ -10,8 +10,8 @@ Website ini dibuat untuk memenuhi tugas akhir mata kuliah Pemrograman Web Dasar
 
 ## Anggota Kelompok
 
--   Azizan Ramadhan - 202243502583
 -   Tobi Saputra - 202243502612
+-   Azizan Ramadhan - 202243502583
 -   Muhammad Iihab Wahyudin - 202243502636
 -   Muhammad Zulfahmi - 202243502609
 -   Muhammad Habib Hendrawan - 202243502635
