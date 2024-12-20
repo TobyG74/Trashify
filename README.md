@@ -10,13 +10,13 @@ Website ini dibuat untuk memenuhi tugas akhir mata kuliah Pemrograman Web Dasar
 
 ## Anggota Kelompok
 
--   Azizan Ramadhan
--   Tobi Saputra
--   Muhammad Iihab Wahyudin
--   Muhammad Zulfahmi
--   Muhammad Habib Hendrawan
--   Meirgy Satria Nugroho
--   Achmad Kevin Arigi
+-   Azizan Ramadhan - 202243502583
+-   Tobi Saputra - 202243502612
+-   Muhammad Iihab Wahyudin - 202243502636
+-   Muhammad Zulfahmi - 202243502609
+-   Muhammad Habib Hendrawan - 202243502635
+-   Meirgy Satria Nugroho - 202243502585
+-   Achmad Kevin Arigi - 202243502584
 
 ## Deskripsi
 
