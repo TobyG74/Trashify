@@ -1,4 +1,8 @@
-# Tugas Akhir Pemrograman Web Dasar
+# Trashify
+
+## Deskripsi
+
+Website ini dibuat untuk memenuhi tugas akhir mata kuliah Pemrograman Web Dasar
 
 ## Demo
 
