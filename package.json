@@ -15,6 +15,6 @@
     "author": "Tobz",
     "license": "MIT",
     "devDependencies": {
-        "tailwindcss": "^3.4.16"
+        "tailwindcss": "^4.3.3"
     }
 }
